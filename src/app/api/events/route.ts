@@ -30,8 +30,8 @@ export async function POST(request: Request) {
             data: {
                 name,
                 description,
-                startTime: new Date(startTime),
-                endTime: new Date(endTime),
+                startTime,
+                endTime,
                 location,
             },
         });
