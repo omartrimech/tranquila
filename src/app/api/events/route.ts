@@ -43,7 +43,7 @@ export async function POST(request: Request) {
         });
     } catch (error) {
         // Handle any errors that occur during the request
-        return new Response(JSON.stringify({ error: "Failed to create event" }), {
+        return new Response(JSON.stringify({ error }), {
             status: 500,
             headers: { "Content-Type": "application/json" },
         });
