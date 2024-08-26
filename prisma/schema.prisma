@@ -17,8 +17,8 @@ model Event {
   id          BigInt  @id @default(autoincrement())
   name        String
   description String?
-  startTime   DateTime @map("start_time")
-  endTime     DateTime @map("end_time")
+  startTime   String @map("start_time")
+  endTime     String @map("end_time")
   location    String?
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @default(now()) @updatedAt @map("updated_at")
